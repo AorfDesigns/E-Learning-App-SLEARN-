@@ -1,0 +1,29 @@
+/* src/index.css or src/App.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add global dark mode styles */
+body {
+  @apply bg-white text-gray-800 dark:bg-gray-800 dark:text-white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply dark:text-white;
+}
+
+p,
+span,
+div,
+a,
+input,
+select,
+button {
+  @apply dark:text-white;
+}

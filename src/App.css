@@ -1,0 +1,12 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(37, 37, 37);
+}
+.sidebar-item {
+  text-decoration: none;
+}
+
+.sidebar-item .active {
+  background-color: orange; /* Adjust to your preferred active state color */
+  color: white; /* Adjust to your preferred text color */
+}
