@@ -15,6 +15,8 @@ import PrivacySettings from './Components/PrivacySettings/PrivacySettings';
 import SubscriptionPlans from './Components/SubscriptionPlans/SubscriptionPlans';
 import Community from './Components/Community/Community';
 import Notification from './Components/Notification/Notification';
+import Resources from './Components/Resources/Resources'
+import Support from './Pages/Support/Support';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -50,6 +52,8 @@ const App = () => {
                   <Route path="/subscriptionplans" element={<SubscriptionPlans />} />
                   <Route path="/community" element={<Community />} />
                   <Route path="/notifications" element={<Notification />} />
+                  <Route path="/resources" element={<Resources />} />
+                  <Route path="/support" element={<Support />} />
                   <Route path="*" element={<Navigate to="/" replace />} />
                 </Routes>
               </Layout>

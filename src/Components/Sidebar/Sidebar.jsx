@@ -60,8 +60,8 @@ const Sidebar = ({  activePath, setActivePath }) => {
         <SidebarItem 
           icon={faFolderOpen} 
           label="Resources" 
-          path="/members" 
-          active={activePath === '/members'} 
+          path="/resources" 
+          active={activePath === '/resources'} 
           onClick={handleItemClick} 
           disabled={false}
         />
