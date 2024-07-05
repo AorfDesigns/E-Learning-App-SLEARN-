@@ -15,8 +15,8 @@ import Community from './Components/Community/Community';
 import Notification from './Components/Notification/Notification';
 import Resources from './Components/Resources/Resources'
 import Support from './Pages/Support/Support';
-import SignUp from './Pages/SignUp/SignUp';
 import ProfileSaved from './Components/ProfileSaved/ProfileSaved,'
+import SignUp from './Components/SignUp/SignUp';
 
 
 
@@ -36,8 +36,8 @@ const App = () => {
     <Router>
       <Routes>
       <Route path="/" element={<HomePage />} />
+      <Route path="/signup" element={<SignUp />} />
         <Route path="/logincomponent" element={<LoginComponent onLogin={handleLogin} />} />
-        <Route path="/signup" element={<SignUp />} />
         <Route
           path="*"
           element={

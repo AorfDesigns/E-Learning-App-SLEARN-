@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import SearchComponent from '../SearchComponent/SearchComponent';
 
 const HeroSection = () => {
   return (
@@ -14,13 +14,11 @@ const HeroSection = () => {
               Learn Without Limits
             </h1>
             <p className="text-sm lg:text-xl text-white dark:text-gray-300 mb-6">
-              Unlock your potential with our comprehensive and interactive learning platform. Whether you're looking to advance your career, learn a new skill, or explore new interests, SLEARN is here to guide you every step of the way.
+              Unlock your potential with our comprehensive and interactive learning platform. SLEARN is here to guide you every step of the way.
             </p>
-            <Link to="/signup">
-              <button className="bg-orange-400 hover:bg-transparent border-2 border-orange-400 text-white px-4 py-4 w-80 rounded-full">
-                Get started
-              </button>
-            </Link>
+           <div className='flex flex-col items-start mr-40'>
+            <SearchComponent />
+           </div>
           </div>
         </div>
       </div>
