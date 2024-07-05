@@ -36,7 +36,7 @@ const LoginComponent = ({ onLogin }) => {
 
     if (valid) {
       onLogin();
-      navigate('/');
+      navigate('/dashboard');
     }
   };
 

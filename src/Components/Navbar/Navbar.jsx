@@ -15,7 +15,7 @@ const Navbar = ({ onLogout, setActivePath }) => {
   const handleLogoutClick = () => {
     setActivePath('/logincomponent');
     onLogout();
-    navigate('/logincomponent');
+    navigate('/');
   };
 
   return (

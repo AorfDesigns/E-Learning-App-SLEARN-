@@ -6,8 +6,6 @@ import Dashboard from './Pages/Dashboard/Dasboard';
 import Courses from './Pages/ViewSite/Courses';
 import Module from './Pages/Module/Module';
 import Performance from './Pages/Performance/Performance';
-import MembersPage from './Pages/Members/MembersPage';
-import DesignPage from './Pages/DesignPage/DesignPage';
 import Profile from './Pages/Profile/Profile';
 import SettingsPage from './Pages/SettingsPage/SettinsPage';
 import Layout from './Components/Layout/Layout';
@@ -17,6 +15,11 @@ import Community from './Components/Community/Community';
 import Notification from './Components/Notification/Notification';
 import Resources from './Components/Resources/Resources'
 import Support from './Pages/Support/Support';
+import SignUp from './Pages/SignUp/SignUp';
+import ProfileSaved from './Components/ProfileSaved/ProfileSaved,'
+
+
+
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -32,20 +35,19 @@ const App = () => {
   return (
     <Router>
       <Routes>
+      <Route path="/" element={<HomePage />} />
         <Route path="/logincomponent" element={<LoginComponent onLogin={handleLogin} />} />
+        <Route path="/signup" element={<SignUp />} />
         <Route
           path="*"
           element={
             isLoggedIn ? (
               <Layout onLogout={handleLogout}>
                 <Routes>
-                  <Route path="/" element={<HomePage />} />
                   <Route path="/dashboard" element={<Dashboard />} />
                   <Route path="/courses" element={<Courses />} />
                   <Route path="/module" element={<Module />} />
                   <Route path="/performance" element={<Performance />} />
-                  <Route path="/members" element={<MembersPage />} />
-                  <Route path="/design" element={<DesignPage />} />
                   <Route path="/profile" element={<Profile />} />
                   <Route path="/settingspage" element={<SettingsPage />} />
                   <Route path="/privacysettings" element={<PrivacySettings />} />
@@ -54,11 +56,12 @@ const App = () => {
                   <Route path="/notifications" element={<Notification />} />
                   <Route path="/resources" element={<Resources />} />
                   <Route path="/support" element={<Support />} />
-                  <Route path="*" element={<Navigate to="/" replace />} />
+                  <Route path="/profilesaved" element={<ProfileSaved />} />
+                  <Route path="*" element={<Navigate to="/dashboard" replace />} />
                 </Routes>
               </Layout>
             ) : (
-              <Navigate to="/logincomponent" replace />
+              <Navigate to="/" replace />
             )
           }
         />

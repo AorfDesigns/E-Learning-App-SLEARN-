@@ -18,14 +18,6 @@ const Sidebar = ({  activePath, setActivePath }) => {
       </div>
       <div className="flex-1 flex flex-col">
         <SidebarItem 
-          icon={faHome} 
-          label="Home" 
-          path="/" 
-          active={activePath === '/'} 
-          onClick={handleItemClick} 
-          disabled={false}
-        />
-        <SidebarItem 
           icon={faTachometerAlt} 
           label="Dashboard" 
           path="/dashboard" 

@@ -74,6 +74,7 @@ const ContactSupport = () => {
               required
             />
           </div>
+         
           <button
             type="submit"
             className="w-full bg-orange-400 hover:bg-transparent border-[2px] border-orange-400 text-gray-800 font-bold py-4 px-4 rounded-full focus:outline-none focus:ring-2"

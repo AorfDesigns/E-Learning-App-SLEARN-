@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 const PersonalInfoPage = () => {
   const [editing, setEditing] = useState(false);
   const [formData, setFormData] = useState({
@@ -99,12 +99,14 @@ const PersonalInfoPage = () => {
           </div>
           {editing && (
             <div>
+              <Link to="/profilesaved">
               <button
                 type="submit"
                 className="w-full flex justify-center py-2 px-4  rounded-full shadow-sm text-sm font-medium text-gray-800 bg-orange-400 hover:bg-transparent border-[2px] border-orange-400 focus:outline-none focus:ring-2 focus:ring-offset-2"
               >
                 Save
               </button>
+              </Link>
             </div>
           )}
         </form>
