@@ -4,7 +4,7 @@ const AboutStats = () => {
   return (
     <div className="bg-gray-100 dark:bg-gray-900 py-12">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl text-[32px] font-bold text-orange-400 dark:text-white mb-8">
+        <h2 className="text-3xl text-[32px] font-bold text-gray-800 dark:text-white mb-8">
           Our Achievements
         </h2>
         <div className="flex flex-col md:flex-row justify-center items-center md:space-x-8 space-y-8 md:space-y-0">
